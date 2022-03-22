@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST"> {% csrf_token %} action="http://127.0.0.1:8000/main/">
+    <p>Insert your first name</p>
+    <input type="text" name='author_first_name'><br>
+    <p>Insert your last name</p>
+    <input type="text" name='author_last_name'> <br>
+    <p>Comment</p>
+    <textarea name="comment" cols="40" rows="3"></textarea>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear"></p>
+</form>
+</body>
+</html>

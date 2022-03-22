@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">{% csrf_token %} action="http://127.0.0.1:8000/main/">
+    <p>Insert your first name</p>
+    <input type="text" name='author_first_name'><br>
+    <p>Insert your last name</p>
+    <input type="text" name='author_last_name'> <br>
+    <p>Insert your patronymic</p>
+    <input type="text" name='author_patronymic'> <br>
+    <p>Choose your age</p>
+    <input type="radio" name="age" value="0-17"> 0-17<br>
+    <input type="radio" name="age" value="18-24"> 18-24<br>
+    <input type="radio" name="age" value="25-30"> 25-30<br>
+    <input type="radio" name="age" value="31-40"> 31-40<br>
+    <input type="radio" name="age" value="41-50"> 41-50<br>
+    <input type="radio" name="age" value="51-60"> 51-60<br>
+    <input type="radio" name="age" value="60+"> 60+<br>
+    <p>Commet</p>
+    <textarea name="comment" cols="40" rows="3"></textarea>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear"></p>
+</form>
+</body>
+</html>
