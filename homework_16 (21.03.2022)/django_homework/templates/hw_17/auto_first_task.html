@@ -1,0 +1,13 @@
+{% extends "hw_17/auto_base.html" %}
+
+{% block title %}
+First task (auto)
+{% endblock %}
+
+{% block content %}
+
+<form method="post" action={% url "auto_first_hw17" %}>{% csrf_token %}
+{{ form.as_p }}
+<br><input type="submit" name="submit">
+</form>
+{% endblock %}

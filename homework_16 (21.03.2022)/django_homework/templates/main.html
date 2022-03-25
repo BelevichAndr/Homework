@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+    Main
+    {% endblock %}</title>
+</head>
+<body>
+
+
+{% for name in hw_name_list %}
+    <a href="{{ name }}"><h1>{{ name }}</h1></a>
+    <br>
+    <br>
+    <br>
+
+{% endfor %}
+{% block content %}
+{% endblock %}
+</body>
+</html>
