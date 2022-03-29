@@ -1,0 +1,15 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <form method="POST" action="http://127.0.0.1:5000/library">
+        <p>Insert book ID</p>
+        <input type="text" name='book_id'><br>
+        <p>Insert student ID</p>
+        <input type="text" name='student_id'> <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear"></p>
+    </form>
+
+{% endblock %}

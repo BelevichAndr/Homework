@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <form method="POST" action="http://127.0.0.1:5000/book">
+        <p>Insert book name</p>
+        <input type="text" name='name'><br>
+        <p>Insert pages count </p>
+        <input type="text" name='pages_count'> <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear"></p>
+    </form>
+
+{% endblock %}

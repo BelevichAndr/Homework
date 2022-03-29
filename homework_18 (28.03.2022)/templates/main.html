@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<ul>
+
+<li><a href="{{ url_for('main') }}"><h1>Главная</h1></a></li>
+<li><a href="{{ url_for('student') }}"><h1>Студент</h1></a></li>
+<li><a href="{{ url_for('group') }}"><h1>Группа</h1></a></li>
+<li><a href="{{ url_for('diary') }}"><h1>Дневник</h1></a></li>
+<li><a href="{{ url_for('book') }}"><h1>Книга</h1></a></li>
+<li><a href="{{ url_for('library') }}"><h1>Библиотека</h1></a></li>
+
+</ul>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

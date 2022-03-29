@@ -1,0 +1,15 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <form method="POST" action="http://127.0.0.1:5000/diary">
+        <p>Insert average marks</p>
+        <input type="text" name='average_marks'><br>
+        <p>Insert student ID</p>
+        <input type="text" name='student_id'> <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear"></p>
+    </form>
+
+{% endblock %}
